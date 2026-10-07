@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Joshua Ebenezer — Data Scientist &amp; ML Engineer</title>
+<title>Joshua Ebenezer — Data Scientist</title>
+<meta name="description" content="Data scientist building AI, data and business intelligence systems on Google Cloud. Currently at Cintas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -21,7 +22,7 @@
 html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
 a{color:var(--accent);text-underline-offset:3px}
-a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
 h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;margin:0;letter-spacing:-0.02em;line-height:1.05}
 
@@ -30,6 +31,7 @@ h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-seri
 .hero h1{font-size:clamp(3rem,9vw,6.25rem);font-weight:700}
 .role{margin:1.5rem 0 0;font-size:1.25rem;max-width:30rem}
 .role span{color:var(--muted)}
+.contact{margin:1.25rem 0 0;color:var(--muted)}
 .viz{width:100%;height:auto;max-height:22rem}
 .viz .link{stroke:var(--accent);stroke-width:1.5}
 .viz .n{fill:var(--node)}
@@ -65,7 +67,8 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);f
   <div class="hero">
     <div>
       <h1>Joshua Ebenezer</h1>
-      <p class="role">Data scientist and ML engineer building recommendation, matching and modeling systems on Google Cloud. <span>Currently at Cintas.</span></p>
+      <p class="role">Data scientist building AI, data and business intelligence systems on Google Cloud. <span>Currently at Cintas.</span></p>
+      <p class="contact"><a href="mailto:josheben.work@gmail.com">josheben.work@gmail.com</a>. Open to relocate.</p>
     </div>
     <!-- Entity resolution motif: scattered records pull together into one entity -->
     <svg class="viz" viewBox="0 0 400 360" role="img" aria-label="Scattered data points merging into a single connected cluster, representing entity resolution">
@@ -95,20 +98,28 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);f
     <div class="wrap">
       <h2>Selected work</h2>
       <div class="row">
-        <h3>Cloud Data Hub<span class="tag">GCP data platform</span></h3>
-        <p>Large-scale data engineering on Google Cloud, working across a warehouse of more than 350 billion records that feeds analytics and machine learning.</p>
+        <h3>Cloud Data Hub<span class="tag">Data platform on GCP</span></h3>
+        <p>Owned and built a warehouse on Google Cloud that holds more than 350 billion records, including 20+ curated gold models. It powers 4+ AI predictive models in production, used by 10+ cross-functional teams across 3+ continents.</p>
       </div>
       <div class="row">
-        <h3>Product recommendation engine<span class="tag">Recommendation systems</span></h3>
-        <p>A recommender that suggests products to customers, built and run as part of the ML pipeline stack on Vertex AI.</p>
+        <h3>Prospect modeling and recommendations<span class="tag">Predictive modeling</span></h3>
+        <p>Models that predict the best prospects from consumer profiles, which drove $2.5B in revenue over 5 quarters. A product recommendation engine supports curated marketing campaigns across 3+ business divisions.</p>
       </div>
       <div class="row">
         <h3>Entity resolution<span class="tag">Matching and clustering</span></h3>
-        <p>Matches records that describe the same business across sources, using vector search (FAISS and approximate nearest neighbor frameworks) followed by graph-based clustering.</p>
+        <p>Harmonized 100M+ business records from multiple sources into unified master records, using LangChain, MCP and agentic AI for explainability, plus graph-based clustering. The Vertex AI pipeline runs automatically.</p>
       </div>
       <div class="row">
-        <h3>Prospect modeling<span class="tag">Predictive modeling</span></h3>
-        <p>Models that identify and prioritize likely new customers, with the surrounding pipelines automated end to end.</p>
+        <h3>Student support assistant<span class="tag">Generative AI, UIUC</span></h3>
+        <p>A GenAI application giving interactive, AI-powered support to 5K+ university students. LangChain connects APIs, custom functions and databases, with Qdrant as the vector database. I fine-tuned GPT-4 Turbo through its API on 700K+ tokens and used prompt templates and retrieval-augmented generation to keep answers consistent.</p>
+      </div>
+      <div class="row">
+        <h3>Driver drowsiness detection<span class="tag">Computer vision, Hyundai</span></h3>
+        <p>Led 2 interns building a drowsiness detection system with TensorFlow, Keras and OpenCV, integrated with the lane departure warning system. Regular audits helped reduce lane departure incidents by 54%.</p>
+      </div>
+      <div class="row">
+        <h3>Student performance prediction<span class="tag">Research, Gies College of Business</span></h3>
+        <p>Built RandomForest, GBM and XGBoost models to predict student performance, tracked with MLflow on an AWS EC2 instance. Prediction accuracy improved by 36%.</p>
       </div>
     </div>
   </section>
@@ -117,45 +128,69 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);f
     <div class="wrap">
       <h2>Experience</h2>
       <div class="row">
-        <h3>Cintas Corporation<span class="tag">Data scientist / ML engineer</span></h3>
-        <p>Builds AI/ML and data engineering systems on GCP, and manages offshore resources supporting that work.</p>
+        <h3>Cintas Corporation<span class="tag">Data Scientist</span><span class="tag">Feb 2024 to present</span></h3>
+        <p>Builds and runs the Cloud Data Hub, prospect and recommendation models, and entity resolution. Manages 5+ offshore resources for platform stabilization and production support, and works with technical and business stakeholders. Gained deep SAP ERP and business knowledge along the way.</p>
       </div>
       <div class="row">
-        <h3>Hyundai Motor Company<span class="tag">Prior role</span></h3>
-        <p>Data work in the automotive industry before moving to Cintas.</p>
+        <h3>Pycas Design Innovations<span class="tag">Data Analyst Intern</span><span class="tag">Aug 2024 to Nov 2024</span></h3>
+        <p>Streamlined procurement of printing goods for Chicago Public Schools. Maintained Snowflake data warehouses fed from AWS S3 and wrote T-SQL queries for performance reporting.</p>
       </div>
       <div class="row">
-        <h3>UIUC Gies College of Business<span class="tag">GenAI Solutions Hub</span></h3>
-        <p>Generative AI solutions work with the college's GenAI Solutions Hub.</p>
+        <h3>Generative AI Solutions Hub, UIUC<span class="tag">GenAI Specialist, full-time co-op</span><span class="tag">Apr 2024 to Jun 2024</span></h3>
+        <p>Built the student support assistant described above.</p>
+      </div>
+      <div class="row">
+        <h3>Gies College of Business, UIUC<span class="tag">Research Assistant, Business Strategy and Analytics</span><span class="tag">Aug 2023 to Dec 2023</span></h3>
+        <p>Built and tracked the student performance prediction models described above.</p>
+      </div>
+      <div class="row">
+        <h3>Hyundai Motor Company<span class="tag">Machine Learning Analyst</span><span class="tag">Jan 2023 to Jul 2023</span></h3>
+        <p>Led the drowsiness detection project. Designed an Ignition (SCADA) database with role-based access control on Snowflake and MySQL, connected to an SAP-managed ETL workflow in Apache Airflow. Analyzed 12+ million historical sales records pulled from AWS Redshift and built a Power BI revenue dashboard covering 5+ years, using DAX and Power Query.</p>
+      </div>
+      <div class="row">
+        <h3>10 Strings Academy of Music<span class="tag">Co-Founder</span><span class="tag">Jan 2019 to Jul 2023</span></h3>
+        <p>Co-founded a music academy and developed its product strategy. Grew enrollment through data-driven marketing with Google Analytics and Power BI. Used machine learning to segment student demographics and personalize learning, and NLP for sentiment analysis, which boosted revenue by INR 1.5 million over 4+ years and multiplied ROI 15x.</p>
       </div>
     </div>
   </section>
 
-  <section id="stack">
+  <section id="education">
     <div class="wrap">
-      <h2>Tools I work with</h2>
+      <h2>Education</h2>
+      <div class="row">
+        <h3>University of Illinois Urbana-Champaign<span class="tag">Aug 2023 to Aug 2024</span></h3>
+        <p>Master of Science in Technology Management, specialty in Data Science (GPA 3.3/4). Coursework: Data Analytics, Business Intelligence, Data Visualization, Enterprise Database Management, Big Data.</p>
+      </div>
+      <div class="row">
+        <h3>SRM Institute of Science and Technology<span class="tag">Jun 2019 to Jun 2023</span></h3>
+        <p>Bachelor of Technology in Computer Science, minor in AI and Machine Learning (GPA 8.3/10). Coursework: AI, Machine Learning, NLP, Neural Networks, Software Engineering, Data Structures, Statistics, Calculus.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
       <dl class="stack">
-        <dt>Platform and pipelines</dt><dd>Google Cloud, Vertex AI, Kubeflow, Airflow, Snowflake</dd>
-        <dt>Matching and retrieval</dt><dd>FAISS, approximate nearest neighbor search, graph clustering, Qdrant</dd>
-        <dt>Generative AI</dt><dd>LangChain, retrieval-augmented generation, GPT-4 Turbo</dd>
-        <dt>Reporting</dt><dd>Power BI</dd>
+        <dt>Machine learning</dt><dd>Computer vision (CNN, LSTM, OpenCV), NLP (RNN, NLTK, SpaCy), scikit-learn, Keras, TensorFlow, PyTorch, SciPy, LangChain, FAISS</dd>
+        <dt>Analytics</dt><dd>Pandas, NumPy, Matplotlib, Statsmodels, Scrapy, Google Analytics, BigQuery</dd>
+        <dt>Business intelligence</dt><dd>Tableau, Power BI, Qlik Sense, Looker, Excel</dd>
+        <dt>Languages and tools</dt><dd>Python, SQL, R, C++, GitLab, Terraform, ArcGIS, Power Automate, MLflow, Ignition, Docker</dd>
+        <dt>Data and cloud</dt><dd>Google Cloud (Vertex AI, Cloud Build, Dataproc), AWS (S3, SageMaker, Glue), Azure, Snowflake, Airflow, MySQL, MongoDB, Knime, SAP ERP (ECC, MDG, MM, SCM, SLT, S/4HANA)</dd>
       </dl>
     </div>
   </section>
 
-  <section id="beyond">
+  <section id="publication">
     <div class="wrap">
-      <h2>Outside work</h2>
-      <div class="row">
-        <h3>Music<span class="tag">Co-founder, music academy</span></h3>
-        <p>I co-founded a music academy and still arrange and record music, mostly worship and rock arrangements.</p>
-      </div>
+      <h2>Publication</h2>
+      <p>Deep Learning Representation Method for IoT Anomaly Detection</p>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap">Joshua Ebenezer</div>
+  <div class="wrap">Joshua Ebenezer. <a href="mailto:josheben.work@gmail.com">josheben.work@gmail.com</a></div>
 </footer>
 </body>
 </html>
